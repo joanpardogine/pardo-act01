@@ -1,3 +1,7 @@
+# Explicació de git
+
+[Git Tutorial](https://www.w3schools.com/git/default.asp?remote=github)
+
 # Instal·lar git a Windows
 
 * Descarregar el programa ```git```.
