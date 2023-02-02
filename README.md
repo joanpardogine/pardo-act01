@@ -234,6 +234,15 @@ create mode 100644 index.html
 ~/pardo-act01$ 
 ```
 
+> ## Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
+> 
+> ### [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
+> 
+> ### [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+
+
+
+
 Ara afegirem dos fitxers més: **```main.js```** i **```styles.css```**
 
 ```sh
