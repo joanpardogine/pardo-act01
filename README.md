@@ -4,23 +4,23 @@
 
 # Index
 
-## [Instal·lar git a Windows](./README.md#installar-git-a-windows-1)
-## [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori-1)
-## [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori-1)
+### [Instal·lar git a Windows](./README.md#installar-git-a-windows-1)
+### [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori-1)
+### [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori-1)
 
-## [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit-1)
+### [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit-1)
 
-## [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
+### [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
 
-## [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+### [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
 
-## [Creació d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
+### [Creació d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
 
-## [Creació d'un repositori a la vostre compta a github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom-1)
+### [Creació d'un repositori a la vostre compta a github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom-1)
 
-## [Com convidar a un col·laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
+### [Com convidar a un col·laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
 
-## [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
+### [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
 
 
 
