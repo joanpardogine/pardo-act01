@@ -2,6 +2,30 @@
 
 [Git Tutorial](https://www.w3schools.com/git/default.asp?remote=github)
 
+# Index
+
+## [Instal·lar git a Windows](./README.md#installar-git-a-windows-1)
+## [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori-1)
+## [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori-1)
+
+## [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit-1)
+
+## [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
+
+## [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+
+## Creació d'un usuari a [github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
+
+## Creació d'un repositori a la vostre compta a [github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom-1)
+
+## Com convidar a un col·laborador a un repositori a la vostre compta a [github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
+
+## [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
+
+
+
+
+
 # Instal·lar git a Windows
 
 * Descarregar el programa ```git```.
@@ -23,6 +47,7 @@ Per fer-ho executarem les següents comandes.
 ```
 
 # Comanda **```git status```** per veure l'estat del repositori
+
 
 Existeix una comanda que ens mostra en quin estat es trova el nostre repositori.
 
@@ -107,6 +132,7 @@ Ens mostra els següents missatges que volen dir:
 * **```(create/copy files and use "git add" to track)```**, que si volem afegir fitxers perquè comenci a gestionar la traçabilitat d'aquests, cal que fem servir la comanda **```git add```** per afegir els fitxers a la llista dels fitxers que volem afegir al repositori.
 
 Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nostre repositori. Però ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
+
 
 # Afegir fitxers, i comanda **```commit```**.
 
@@ -238,8 +264,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Abans de seguir cal confirmar que tenim la nostra instal·lació de git al nostre ordinador ben configurat.
 
-[Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
-[Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
+
+## [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
+
+## [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 
 # Creació d'un usuari a [github.com](https://github.com/)
 
