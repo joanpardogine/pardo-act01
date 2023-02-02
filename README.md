@@ -148,12 +148,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 Ara apareix una secció **```Untracked files```**, és a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, és a dir que **NO tenen de traça**. És a dir, que el fitxer **```index.html```**, no està marcat per controlar els canvis que es facin sobre ell.
 
 A part, apareix la següent explicació:
-
 ```sh
 use "git add ..." to include in what will be committed
+
 ```
 
-És a dir, que es faci servir "**```git add ...```**" per incloure els fitxers que volem que **```git```** comenci a controlar.
+
+La comanda **```git add ...```** afegeix un fitxer al repositori local i el prepara per a la confirmació. Per eliminar o treure un fitxer, cal fer servir **```git reset HEAD <<nomFitxer>>```**.
+
+És a dir, que cal fer servir "**```git add ...```**" per incloure els fitxers que volem que **```git```** comenci a controlar.
 
 I per útlim ens indica:
 
