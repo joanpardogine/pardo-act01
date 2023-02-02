@@ -14,11 +14,11 @@
 
 ## [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
 
-## Creació d'un usuari a [github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
+## [Creació d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
 
-## Creació d'un repositori a la vostre compta a [github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom-1)
+## [Creació d'un repositori a la vostre compta a github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom-1)
 
-## Com convidar a un col·laborador a un repositori a la vostre compta a [github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
+## [Com convidar a un col·laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
 
 ## [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
 
