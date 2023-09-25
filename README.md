@@ -36,11 +36,11 @@
 **1.** Crear la carpeta contenidora del nostre projecte.
 
 
-Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlmune>-primer-repositori```**, (on <CognomAlmune> és el nom de l'alumne, sense el cognom, per exemple amb el meu cas seria **```pardo-primer-repositori```**) i ser? la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlmune>-primer-repositori```**. En el meu cas, la crear? dins de la unitat D: del meu portatil.
+Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlmune>-primer-repositori```**, (on **```<CognomAlmune>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i ser? la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlmune>-primer-repositori```**.
+En el meu cas, la crear? dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
 Per fer-ho executarem les següents comandes.
 ```sh
-~$ mkdir <CognomAlmune>-primer-repositori
 ~$ mkdir <CognomAlmune>-primer-repositori
 ~$ cd <CognomAlmune>-primer-repositori
 ~/<CognomAlmune>-primer-repositori $ pwd
