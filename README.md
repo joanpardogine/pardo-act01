@@ -36,15 +36,15 @@
 **1.** Crear la carpeta contenidora del nostre projecte.
 
 
-Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlmune>-primer-repositori```**, (on **```<CognomAlmune>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i ser? la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlmune>-primer-repositori```**.
+Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i ser? la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
 En el meu cas, la crear? dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
 Per fer-ho executarem les següents comandes.
 ```sh
-~$ mkdir <CognomAlmune>-primer-repositori
-~$ cd <CognomAlmune>-primer-repositori
-~/<CognomAlmune>-primer-repositori $ pwd
-\d\<CognomAlmune>-primer-repositori
+~$ mkdir <CognomAlumne>-primer-repositori
+~$ cd <CognomAlumne>-primer-repositori
+~/<CognomAlumne>-primer-repositori $ pwd
+\d\<CognomAlumne>-primer-repositori
 ```
 
 # Comanda **```git status```** per veure l'estat del repositori
@@ -54,9 +54,9 @@ Existeix una comanda que ens mostra en quin estat es troba el nostre repositori.
 Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrar? quin és l'estat del repositori.
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git status
+~/<CognomAlumne>-primer-repositori $ git status
 fatal: not a git repository (or any of the parent directories): .git
-~/<CognomAlmune>-primer-repositori $
+~/<CognomAlumne>-primer-repositori $
 ```
 
 Obtenim un error, que ens diu que no és un repositori. Aix? és normal, ja que per defecte, cap carpeta és un repositori.
@@ -74,14 +74,19 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git init
-Initialised empty Git repository in /d/<CognomAlmune>-primer-repositori/.git/
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ git init
+Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlmune>-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a repositori buit la ruta (**``/d/<CognomAlmune>-primer-repositori/.git/``**).`
+Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/<CognomAlumne>-primer-repositori/.git/``**).`
 
-Tanmateix, si mirem el contingut de la carpeta **```<CognomAlmune>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
+> ## **NOTA IMPORTANT**
+> ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminar? tota la informació dels canvis que ha registrat fins al moment i crear?, com ja s'ha comentat, un **repositori buit**.
+> <br>
+<br>
+
+Tanmateix, si mirem el contingut de la carpeta **```<CognomAlumne>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
 
 **Comanda**:
 
@@ -92,9 +97,9 @@ ls -l
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ ls -l
+~/<CognomAlumne>-primer-repositori $ ls -l
 total 0
-~/<CognomAlmune>-primer-repositori $
+~/<CognomAlumne>-primer-repositori $
 ```
 
 Per? si executem la comanda perqu? mostri els fitxers ocults **```ls -la```** o **```dir /a```**, llavors sí que veiem que hi ha una carpeta nova anomenada **```.git```**, el que passa és que és oculta.
@@ -108,12 +113,12 @@ ls -la
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ ls -a
+~/<CognomAlumne>-primer-repositori $ ls -a
 total 12
 drwxrwxr-x 3 user user 4096 Sep 24 13:00 .
 drwxrwxrwx 7 user user 4096 Sep 24 13:00 ..
 drwxrwxr-x 7 user user 4096 Sep 24 13:00 .git
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
 Aquesta carpeta **```.git```** és la que conté tota la informació de **```git```** sobre el projecte. Cada vegada que es facin canvis, ja sigui afegint fitxers, modificant el contingut dels fitxers, creant o esborrant subcarpetes ,etc aquests canvis s'aniran guardant en aquesta carpeta. Per tant, **és important** que no l'esborreu, ni li feu res, ja que és **imprescindible** per poder interactuar amb **```git```**.
@@ -129,21 +134,21 @@ cd .git
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ cd .git
-~/<CognomAlmune>-primer-repositori/.git$ ls -l
+~/<CognomAlumne>-primer-repositori $ cd .git
+~/<CognomAlumne>-primer-repositori/.git$ ls -l
 total 32
 drwxrwxr-x 2 user user 4096 Sep 24 13:00 branches
--rw-rw-r-? 1 user user   92 Sep 24 13:00 config
--rw-rw-r-? 1 user user   73 Sep 24 13:00 description
--rw-rw-r-? 1 user user   23 Sep 24 13:00 HEAD
+-rw-rw-r-- 1 user user   92 Sep 24 13:00 config
+-rw-rw-r-- 1 user user   73 Sep 24 13:00 description
+-rw-rw-r-- 1 user user   23 Sep 24 13:00 HEAD
 drwxrwxr-x 2 user user 4096 Sep 24 13:00 hooks
 drwxrwxr-x 2 user user 4096 Sep 24 13:00 info
 drwxrwxr-x 4 user user 4096 Sep 24 13:00 objects
 drwxrwxr-x 4 user user 4096 Sep 24 13:00 refs
-~/<CognomAlmune>-primer-repositori/.git$ 
+~/<CognomAlumne>-primer-repositori/.git$ 
 ```
 
-Per?, si ara tornem enrere, amb **```cd ..```**, és a dir, a la carpeta **```pardo-act01```** i executem la comanda **```git -status```**, la resposta rebuda és una altra.
+Per?, si ara tornem enrere, amb **```cd ..```**, és a dir, a la carpeta **```<CognomAlmune>-primer-repositori```** i executem la comanda **```git -status```**, la resposta rebuda és una altra.
 
 **Comanda**:
 
@@ -154,15 +159,15 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori/.git$ cd ..
-~/<CognomAlmune>-primer-repositori $ git status
+~/<CognomAlumne>-primer-repositori/.git$ cd ..
+~/<CognomAlumne>-primer-repositori $ git status
 On branch main
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 
-~/<CognomAlmune>-primer-repositori $
+~/<CognomAlumne>-primer-repositori $
 ```
 
 Ens mostra els següents missatges que volen dir:
@@ -178,9 +183,17 @@ Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nostre
 
 Per començar crearem tres fitxers.
 
-**```index.html```**, **```main.js```** i **```styles.css```**.
+1. **```index.html```**,
+1. **```main.js```** i
+1. **```styles.css```**.
 
-El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)](https://codepen.io/joanpardo/pen/QWBzLwp)), i afegim el text b?sic per crear una p?gina web.
+1. **```index.html```**,
+
+El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)](https://codepen.io/joanpardo/pen/QWBzLwp)), i afegim el text b?sic per crear una senzilla p?gina web.
+
+Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i aix? us obrir? el **```Notepad```**.
+
+Copieu el següent codi:
 
 ```html
 <html lang="ca">
@@ -193,23 +206,25 @@ El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)
   </body>
 </html>
 ```
+
+I guardeu el fitxer a la vostra ruta:
+
+```sh
+<CognomAlumne>-primer-repositori
+```
+
 Un cop que hem creat, modificat i guardat aquest primer fitxer, anem a veure qu? és el que ens diu **```git```**.
 
 **Comanda**:
 
 ```sh
-vi index.html
+git status
 ```
 
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ vi index.html
-```
-
-
-```sh
-~/<CognomAlmune>-primer-repositori $ git status
+~/<CognomAlumne>-primer-repositori $ git status
 On branch main
 
 No commits yet
@@ -219,15 +234,16 @@ Untracked files:
         index.html
 
 nothing added to commit but untracked files present (use "git add" to track)
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Ara apareix una secció **```Untracked files```**, és a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, és a dir que **NO tenen de traça**. és a dir, que el fitxer **```index.html```**, no est? marcat per controlar els canvis que es facin sobre ell.
+Ara apareix una secció **```Untracked files```**, és a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, és a dir que ***NO* tenen de traça**.
+
+És a dir, que el fitxer **```index.html```**, no est? marcat per controlar els canvis que es facin sobre ell.
 
 A part, apareix la següent explicació:
 ```sh
 use "git add ..." to include in what will be committed
-
 ```
 
 La comanda **```git add ...```** afegeix un fitxer al repositori local i el prepara per a la confirmació. Per eliminar o treure un fitxer, cal fer servir **```git reset HEAD <<nomFitxer>>```**.
@@ -242,11 +258,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Que tot i que hi ha **fitxers sense traça** (**```untracked files```**), no hi ha res afegit per **confirmar**, és a dir per incloure en el següent control. I ens indica que cal fer per afegir fitxers al control, "**```(use "git add" to track)```**, és a dir feu servir **```git add```** per afegir fitxers a traçar.
 
-Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el nostre cas apareix el fitxer **```index.html```** que acabem d'afegir, per? com que no l'hem afegit al control de traça, **``git``** encara no el `té a la llista de fitxers a controlar. Ara mateix, per molt que nosaltres el modifiquem, **``git``** mai el detectar?, ni controlar? els canvis`que pateixi.
+Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el nostre cas apareix el fitxer **```index.html```** que acabem d'afegir, per? com que no l'hem afegit al control de traça, **``git``** encara no el té a la llista de fitxers a controlar.
+
+Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectar? els canvis, ni controlar? els canvis que fem sobre aquest fitxer.
 
 ## Afegir fitxers
 
-Perqu? **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo, i per així existeix la comanda **```git add <pathspec>```**.
+Perqu? **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
+
+I per aix? existeix la comanda **```git add <nomDelFitxer>```**.
 
 **Comanda**:
 
@@ -257,8 +277,10 @@ git add index.html
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git add index.html
+~/<CognomAlumne>-primer-repositori $ git add index.html
 ```
+
+Un cop que hem afegit el fitxer **```index.html```**, anem a veure quin és l'estat del nostre repositori amb **```git status```**.
 
 **Comanda**:
 
@@ -269,59 +291,75 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git status
+~/<CognomAlumne>-primer-repositori $ git status
 On branch main
 
 No commits yet
 
 Changes to be committed:
-  (use "git rm ??cached ..." to unstage)
+  (use "git rm --cached <file> ..." to unstage)
         new file:   index.html
 
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Un cop afegit el fitxer **```index.html```**, si tornem a executar la comanda **```git status```**, ara apareix un nou missatge "**```Changes to be committed```**" és a dir, canvis per ser controlats. I el fitxer **```index.html```** ja apareix com a fitxer nou i de color verd.
+Un cop afegit el fitxer **```index.html```**, si tornem a executar la comanda **```git status```**, ara apareix un nou missatge **```Changes to be committed```** és a dir, canvis per ser controlats. I el fitxer **```index.html```** ja apareix com a fitxer nou i de color verd.
 
-Ara és el moment de fer un **```commit```**. Un **```commit```** o **confirmació** és un **punt de control** en el nostre projecte. Acabarem tenint molts **```commit```**'s, cada vegada que fem alguna cosa important o prou rellevant. Com un petit **punt de control** al qual sempre podrem tornar. Per tant, és recomanable realitzar aquests **```commit```**'s, per exemple cada vegada es crea un nou fitxer, o afegim una única funció de **```javascript```**, o hem modificat alguns estils, etc. és a dir, cal fer un **```commit```** cada vegada que es vulgui crear un **punt de control**, que volem recordar, o al que volem poder tornar més endavant.
-Per fer-ho, cal fer servir, la comanda git **```commit```** amb el par?metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que és possible no afegir cap missatge, és molt recomanable, afegir-ne un que sigui útil i descriptiu sobre el que acabem de fer. Com per exemple, "**```Creat el fitxer index.html```**".
+Ara és el moment de fer un **```commit```**. Un **```commit```** o **confirmació** és un **punt de control** en el nostre projecte. 
+
+Acabarem tenint molts **```commit```**'s, cada vegada que fem alguna cosa important o prou rellevant. Com un petit **punt de control** al qual sempre podrem tornar
+
+Per tant, és **molt recomanable** realitzar aquests **```commit```**'s, per exemple cada vegada es crea un nou fitxer, o afegim una única funció de **```javascript```** (per exemple), o hem modificat alguns estils, etc.
+
+És a dir, cal fer un **```commit```** cada vegada que es vulgui crear un **punt de control**, que volem recordar, o al que volem poder tornar més endavant.
+
+
+Per fer-ho, cal fer servir, la comanda**```git commit```** amb el par?metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que és possible no afegir cap missatge, és molt recomanable, afegir-ne un que sigui útil i descriptiu sobre el que acabem de fer. Com per exemple, "**```Creat el fitxer index.html```**".
 Aix? ens ser? molt útil per més endavant, per quan veiem el log dels **```commit```**'s, puguem recon?ixer a cadascun d'ells i saber que és el que vam fer just en aquell moment.
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git commit -m "Creat el fitxer index.html"
+~/<CognomAlumne>-primer-repositori $ git commit -m "Creat el fitxer index.html"
 [main (root-commit) 74859bc] Creat el fitxer index.html
 1 file changed, 10 insertions(+)
 create mode 100644 index.html
 
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
-> ## Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
+<hr>
+
+<details>
+<summary>Si us apareix un error ...</summary>
+
+> <hr>
+>
+>  Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
 > 
-> ### [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
-> 
-> ### [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+> [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
+>
+> [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+> <hr>
+</details>
 
-
-
+<hr>
 
 Ara afegirem dos fitxers més: **```main.js```** i **```styles.css```**
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ touch main.js
-~/<CognomAlmune>-primer-repositori $ touch styles.css
-~/<CognomAlmune>-primer-repositori $ ls -l
--rw-rw-r-? 1 user user 130 Sep 24 13:00 index.html
--rw-rw-r-? 1 user user   0 Sep 24 13:00 main.js
--rw-rw-r-? 1 user user   0 Sep 24 13:00 styles.css
+~/<CognomAlumne>-primer-repositori $ touch main.js
+~/<CognomAlumne>-primer-repositori $ touch styles.css
+~/<CognomAlumne>-primer-repositori $ ls -l
+-rw-rw-r-- 1 user user 130 Sep 24 13:00 index.html
+-rw-rw-r-- 1 user user   0 Sep 24 13:00 main.js
+-rw-rw-r-- 1 user user   0 Sep 24 13:00 styles.css
 
-~/<CognomAlmune>-primer-repositori $ 
+~/<CognomAlumne>-primer-repositori $ 
 ```
 
 I de moment els deixem buits i anem a veure qu? ha passat al git.
 
 ```sh
-~/<CognomAlmune>-primer-repositori $ git status
+~/<CognomAlumne>-primer-repositori $ git status
 On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -330,7 +368,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-~/<CognomAlmune>-primer-repositori $
+~/<CognomAlumne>-primer-repositori $
 ```
 
 Abans de seguir cal confirmar que tenim la nostra instal·lació de git al nostre ordinador ben configurat.
