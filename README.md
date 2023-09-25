@@ -65,6 +65,14 @@ Obtenim un error, que ens diu que no és un repositori. Aix? és normal, ja que pe
 
 Per fer que la nostra carpeta sigui un repositori, és a dir, per dir-li a **```git```** que volem que porti el control dels canvis al fitxers, cal que executem la comanda **```git init```**.
 
+**Comanda**:
+
+```sh
+git status
+```
+
+**Exemple**:
+
 ```sh
 ~/<CognomAlmune>-primer-repositori $ git init
 Initialised empty Git repository in /d/<CognomAlmune>-primer-repositori/.git/
@@ -75,6 +83,14 @@ Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlmun
 
 Tanmateix, si mirem el contingut de la carpeta **```<CognomAlmune>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
 
+**Comanda**:
+
+```sh
+ls -l
+```
+
+**Exemple**:
+
 ```sh
 ~/<CognomAlmune>-primer-repositori $ ls -l
 total 0
@@ -82,6 +98,14 @@ total 0
 ```
 
 Per? si executem la comanda perqu? mostri els fitxers ocults **```ls -la```** o **```dir /a```**, llavors sí que veiem que hi ha una carpeta nova anomenada **```.git```**, el que passa és que és oculta.
+
+**Comanda**:
+
+```sh
+ls -la
+```
+
+**Exemple**:
 
 ```sh
 ~/<CognomAlmune>-primer-repositori $ ls -a
@@ -95,6 +119,14 @@ drwxrwxr-x 7 user user 4096 Sep 24 13:00 .git
 Aquesta carpeta **```.git```** és la que conté tota la informació de **```git```** sobre el projecte. Cada vegada que es facin canvis, ja sigui afegint fitxers, modificant el contingut dels fitxers, creant o esborrant subcarpetes ,etc aquests canvis s'aniran guardant en aquesta carpeta. Per tant, **és important** que no l'esborreu, ni li feu res, ja que és **imprescindible** per poder interactuar amb **```git```**.
 
 Si accedim a aquesta carpeta **```.git```** amb un **```cd .git```**, i llistem el contingut amb **```ls -l```** o amb **```dir```** podrem veure tot el contingut que necessita **```git```** per funcionar.
+
+**Comanda**:
+
+```sh
+cd .git
+```
+
+**Exemple**:
 
 ```sh
 ~/<CognomAlmune>-primer-repositori $ cd .git
@@ -112,6 +144,14 @@ drwxrwxr-x 4 user user 4096 Sep 24 13:00 refs
 ```
 
 Per?, si ara tornem enrere, amb **```cd ..```**, és a dir, a la carpeta **```pardo-act01```** i executem la comanda **```git -status```**, la resposta rebuda és una altra.
+
+**Comanda**:
+
+```sh
+git status
+```
+
+**Exemple**:
 
 ```sh
 ~/<CognomAlmune>-primer-repositori/.git$ cd ..
@@ -155,6 +195,14 @@ El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)
 ```
 Un cop que hem creat, modificat i guardat aquest primer fitxer, anem a veure qu? és el que ens diu **```git```**.
 
+**Comanda**:
+
+```sh
+vi index.html
+```
+
+**Exemple**:
+
 ```sh
 ~/<CognomAlmune>-primer-repositori $ vi index.html
 ```
@@ -182,7 +230,6 @@ use "git add ..." to include in what will be committed
 
 ```
 
-
 La comanda **```git add ...```** afegeix un fitxer al repositori local i el prepara per a la confirmació. Per eliminar o treure un fitxer, cal fer servir **```git reset HEAD <<nomFitxer>>```**.
 
 És a dir, que cal fer servir "**```git add ...```**" per incloure els fitxers que volem que **```git```** comenci a controlar.
@@ -201,9 +248,25 @@ Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el n
 
 Perqu? **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo, i per així existeix la comanda **```git add <pathspec>```**.
 
+**Comanda**:
+
+```sh
+git add index.html
+```
+
+**Exemple**:
+
 ```sh
 ~/<CognomAlmune>-primer-repositori $ git add index.html
 ```
+
+**Comanda**:
+
+```sh
+git status
+```
+
+**Exemple**:
 
 ```sh
 ~/<CognomAlmune>-primer-repositori $ git status
