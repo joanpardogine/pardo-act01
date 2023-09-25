@@ -314,7 +314,7 @@ Per tant, és **molt recomanable** realitzar aquests **```commit```**'s, per exem
 És a dir, cal fer un **```commit```** cada vegada que es vulgui crear un **punt de control**, que volem recordar, o al que volem poder tornar més endavant.
 
 
-Per fer-ho, cal fer servir, la comanda**```git commit```** amb el par?metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que és possible no afegir cap missatge, és molt recomanable, afegir-ne un que sigui útil i descriptiu sobre el que acabem de fer. Com per exemple, "**```Creat el fitxer index.html```**".
+Per fer-ho, cal fer servir, la comanda **```git commit```** amb el par?metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que és possible no afegir cap missatge, és molt recomanable, afegir-ne un que sigui útil i descriptiu sobre el que acabem de fer. Com per exemple, **```Creat el fitxer index.html```**.
 Aix? ens ser? molt útil per més endavant, per quan veiem el log dels **```commit```**'s, puguem recon?ixer a cadascun d'ells i saber que és el que vam fer just en aquell moment.
 
 ```sh
@@ -335,9 +335,9 @@ create mode 100644 index.html
 >
 >  Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
 > 
-> [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
+> [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
 >
-> [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+> [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 > <hr>
 </details>
 
