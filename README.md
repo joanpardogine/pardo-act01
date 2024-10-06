@@ -27,6 +27,14 @@
 1. [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
 </details>
 
+<hr>
+
+> [!TIP]
+> Per més informació podeu consultar [Què és **`Git`**?](./documents/que-es-git.md)
+>
+
+<hr>
+
 ## Instal·lar git a Windows
 
 * Descarregar el programa ```git``` des de la web [Git-2.39.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.39.1.windows.1/Git-2.39.1-64-bit.exe)
@@ -55,13 +63,13 @@ pwd
 ><pre>
 > ~$ mkdir <CognomAlumne>-primer-repositori
 > ~$ cd <CognomAlumne>-primer-repositori
-> ~/<CognomAlumne>-primer-repositori $ pwd
+> ~/pardo-primer-repositori $ pwd
 > \d\<CognomAlumne>-primer-repositori
 ></pre>
 
 # Comanda **```git status```** per veure l'estat del repositori
 
-Existeix una comanda que ens mostra en quin estat es troba el nostre repositori.
+Existeix una comanda ([**`git status`**]()) que ens mostra en quin estat es troba el nostre repositori.
 
 Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrarà quin és l'estat del repositori.
 
@@ -75,9 +83,9 @@ git status
 >
 > **Sortida**
 ><pre>
->~/<CognomAlumne>-primer-repositori $ git status
+>~/pardo-primer-repositori $ git status
 >fatal: not a git repository (or any of the parent directories): .git
->~/<CognomAlumne>-primer-repositori $
+>~/pardo-primer-repositori $
 ></pre>
 
 Obtenim un error, que ens diu que no és un repositori. així és normal, ja que per defecte, cap carpeta és un repositori.
@@ -96,12 +104,12 @@ git status
 >
 > **Sortida**
 ><pre>
->~/<CognomAlumne>-primer-repositori $ git init
->Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/
->~/<CognomAlumne>-primer-repositori $ 
+>~/pardo-primer-repositori $ git init
+>Initialised empty Git repository in /d/pardo-primer-repositori/.git/
+>~/pardo-primer-repositori $ 
 >```
 
-Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/<CognomAlumne>-primer-repositori/.git/``**).`
+Ens mostra el missatge (**```Initialised empty Git repository in /d/pardo-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/pardo-primer-repositori/.git/``**).`
 
 > ## **NOTA IMPORTANT**
 > ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
@@ -119,9 +127,9 @@ ls -l
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ ls -l
+~/pardo-primer-repositori $ ls -l
 total 0
-~/<CognomAlumne>-primer-repositori $
+~/pardo-primer-repositori $
 ```
 
 Però si executem la comanda perquè mostri els fitxers ocults **```ls -la```** o **```dir /a```**, llavors sí que veiem que hi ha una carpeta nova anomenada **```.git```**, el que passa és que és oculta.
@@ -135,12 +143,12 @@ ls -la
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ ls -a
+~/pardo-primer-repositori $ ls -a
 total 12
 drwxrwxr-x 3 user user 4096 Sep 24 13:00 .
 drwxrwxrwx 7 user user 4096 Sep 24 13:00 ..
 drwxrwxr-x 7 user user 4096 Sep 24 13:00 .git
-~/<CognomAlumne>-primer-repositori $ 
+~/pardo-primer-repositori $ 
 ```
 
 Aquesta carpeta **```.git```** és la que conté tota la informació de **```git```** sobre el projecte. Cada vegada que es facin canvis, ja sigui afegint fitxers, modificant el contingut dels fitxers, creant o esborrant subcarpetes ,etc aquests canvis s'aniran guardant en aquesta carpeta. Per tant, **és important** que no l'esborreu, ni li feu res, ja que és **imprescindible** per poder interactuar amb **```git```**.
@@ -156,8 +164,8 @@ cd .git
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ cd .git
-~/<CognomAlumne>-primer-repositori/.git$ ls -l
+~/pardo-primer-repositori $ cd .git
+~/pardo-primer-repositori/.git$ ls -l
 total 32
 drwxrwxr-x 2 user user 4096 Sep 24 13:00 branches
 -rw-rw-r-- 1 user user   92 Sep 24 13:00 config
@@ -167,7 +175,7 @@ drwxrwxr-x 2 user user 4096 Sep 24 13:00 hooks
 drwxrwxr-x 2 user user 4096 Sep 24 13:00 info
 drwxrwxr-x 4 user user 4096 Sep 24 13:00 objects
 drwxrwxr-x 4 user user 4096 Sep 24 13:00 refs
-~/<CognomAlumne>-primer-repositori/.git$ 
+~/pardo-primer-repositori/.git$ 
 ```
 
 Però, si ara tornem enrere, amb **```cd ..```**, és a dir, a la carpeta **```<CognomAlmune>-primer-repositori```** i executem la comanda **```git -status```**, la resposta rebuda és una altra.
@@ -181,15 +189,15 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori/.git$ cd ..
-~/<CognomAlumne>-primer-repositori $ git status
+~/pardo-primer-repositori/.git$ cd ..
+~/pardo-primer-repositori $ git status
 On branch main
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 
-~/<CognomAlumne>-primer-repositori $
+~/pardo-primer-repositori $
 ```
 
 Ens mostra els següents missatges que volen dir:
@@ -246,7 +254,7 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ git status
+~/pardo-primer-repositori $ git status
 On branch main
 
 No commits yet
@@ -256,7 +264,7 @@ Untracked files:
         index.html
 
 nothing added to commit but untracked files present (use "git add" to track)
-~/<CognomAlumne>-primer-repositori $ 
+~/pardo-primer-repositori $ 
 ```
 
 Ara apareix una secció **```Untracked files```**, É a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, és a dir que ***NO* tenen de traça**.
@@ -299,7 +307,7 @@ git add index.html
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ git add index.html
+~/pardo-primer-repositori $ git add index.html
 ```
 
 Un cop que hem afegit el fitxer **```index.html```**, anem a veure quin és l'estat del nostre repositori amb **```git status```**.
@@ -313,7 +321,7 @@ git status
 **Exemple**:
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ git status
+~/pardo-primer-repositori $ git status
 On branch main
 
 No commits yet
@@ -322,7 +330,7 @@ Changes to be committed:
   (use "git rm --cached <file> ..." to unstage)
         new file:   index.html
 
-~/<CognomAlumne>-primer-repositori $ 
+~/pardo-primer-repositori $ 
 ```
 
 Un cop afegit el fitxer **```index.html```**, si tornem a executar la comanda **```git status```**, ara apareix un nou missatge **```Changes to be committed```** és a dir, canvis per ser controlats. I el fitxer **```index.html```** ja apareix com a fitxer nou i de color verd.
@@ -340,12 +348,12 @@ Per fer-ho, cal fer servir, la comanda **```git commit```** amb el paràmetre **
 així ens serà molt útil per més endavant, per quan veiem el log dels **```commit```**'s, puguem reconèixer a cadascun d'ells i saber que és el que vam fer just en aquell moment.
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ git commit -m "Creat el fitxer index.html"
+~/pardo-primer-repositori $ git commit -m "Creat el fitxer index.html"
 [main (root-commit) 74859bc] Creat el fitxer index.html
 1 file changed, 10 insertions(+)
 create mode 100644 index.html
 
-~/<CognomAlumne>-primer-repositori $ 
+~/pardo-primer-repositori $ 
 ```
 
 <hr>
@@ -368,20 +376,20 @@ create mode 100644 index.html
 Ara afegirem dos fitxers més: **```main.js```** i **```styles.css```**
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ touch main.js
-~/<CognomAlumne>-primer-repositori $ touch styles.css
-~/<CognomAlumne>-primer-repositori $ ls -l
+~/pardo-primer-repositori $ touch main.js
+~/pardo-primer-repositori $ touch styles.css
+~/pardo-primer-repositori $ ls -l
 -rw-rw-r-- 1 user user 130 Sep 24 13:00 index.html
 -rw-rw-r-- 1 user user   0 Sep 24 13:00 main.js
 -rw-rw-r-- 1 user user   0 Sep 24 13:00 styles.css
 
-~/<CognomAlumne>-primer-repositori $ 
+~/pardo-primer-repositori $ 
 ```
 
 I de moment els deixem buits i anem a veure què ha passat al git.
 
 ```sh
-~/<CognomAlumne>-primer-repositori $ git status
+~/pardo-primer-repositori $ git status
 On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -390,7 +398,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-~/<CognomAlumne>-primer-repositori $
+~/pardo-primer-repositori $
 ```
 
 Abans de seguir cal confirmar que tenim la nostra instal·lació de git al nostre ordinador ben configurat.
