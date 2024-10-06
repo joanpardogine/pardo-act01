@@ -40,19 +40,23 @@ Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **
 En el meu cas, la crearé dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
 Per fer-ho executarem les següents comandes.
+
+**Comanda**:
+
 ```sh
 mkdir <CognomAlumne>-primer-repositori
 cd <CognomAlumne>-primer-repositori
 pwd
 ```
 
-### Sortida
-<pre>
-~$ mkdir <CognomAlumne>-primer-repositori
-~$ cd <CognomAlumne>-primer-repositori
-~/<CognomAlumne>-primer-repositori $ pwd
-\d\<CognomAlumne>-primer-repositori
-</pre>
+**Exemple**:
+> [!TIP]
+>
+> ~$ mkdir <CognomAlumne>-primer-repositori
+> ~$ cd <CognomAlumne>-primer-repositori
+> ~/<CognomAlumne>-primer-repositori $ pwd
+> \d\<CognomAlumne>-primer-repositori
+> <hr>
 
 # Comanda **```git status```** per veure l'estat del repositori
 
@@ -60,11 +64,18 @@ Existeix una comanda que ens mostra en quin estat es troba el nostre repositori.
 
 Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrarà quin és l'estat del repositori.
 
+**Comanda**:
+
 ```sh
+git status
+```
+
+**Exemple**:
+<pre>
 ~/<CognomAlumne>-primer-repositori $ git status
 fatal: not a git repository (or any of the parent directories): .git
 ~/<CognomAlumne>-primer-repositori $
-```
+</pre>
 
 Obtenim un error, que ens diu que no és un repositori. així és normal, ja que per defecte, cap carpeta és un repositori.
 
