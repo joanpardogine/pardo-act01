@@ -124,6 +124,8 @@ git status
 
 Ens mostra el missatge (**```Initialised empty Git repository in /d/pardo-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/pardo-primer-repositori/.git/``**).`
 
+> [!WARNING]  
+>
 > ## **NOTA IMPORTANT**
 > ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
 > <br>
