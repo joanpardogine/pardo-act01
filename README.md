@@ -52,12 +52,12 @@ pwd
 > [!TIP]
 >
 > **Sortida**
->```sh
+><pre>
 > ~$ mkdir <CognomAlumne>-primer-repositori
 > ~$ cd <CognomAlumne>-primer-repositori
 > ~/<CognomAlumne>-primer-repositori $ pwd
 > \d\<CognomAlumne>-primer-repositori
->```
+></pre>
 > <hr>
 
 # Comanda **```git status```** per veure l'estat del repositori
