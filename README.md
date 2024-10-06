@@ -49,13 +49,15 @@ cd <CognomAlumne>-primer-repositori
 pwd
 ```
 
-**Exemple**:
 > [!TIP]
 >
+> **Sortida**
+>```sh
 > ~$ mkdir <CognomAlumne>-primer-repositori
 > ~$ cd <CognomAlumne>-primer-repositori
 > ~/<CognomAlumne>-primer-repositori $ pwd
 > \d\<CognomAlumne>-primer-repositori
+>```
 > <hr>
 
 # Comanda **```git status```** per veure l'estat del repositori
