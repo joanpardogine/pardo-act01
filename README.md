@@ -90,7 +90,7 @@ git status
 
 Obtenim un **error**, és normal!
 
-> [!CAUTION]
+> [!WARNING]
 >
 > <pre>fatal: not a git repository (or any of the parent directories): .git
 > </pre>
@@ -124,13 +124,12 @@ git status
 
 Ens mostra el missatge (**```Initialised empty Git repository in /d/pardo-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/pardo-primer-repositori/.git/``**).`
 
-> [!WARNING]  
+> [!CAUTION]  
 >
-> > [!CAUTION]  
-> >
-> > ## **NOTA IMPORTANT**
-> > ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
-> > <br>
+>
+> ## **NOTA IMPORTANT**
+> ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
+> <br>
 <br>
 
 Tanmateix, si mirem el contingut de la carpeta **```<CognomAlumne>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
