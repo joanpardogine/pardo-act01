@@ -103,7 +103,7 @@ Obtenim un **error**, és normal!
 
 L'**error** ens diu que **no és un repositori**. Això és totalment normal, ja que per defecte, **cap carpeta és un repositori**.
 
-
+<hr>
 
 ## Inicialitzar un repositori
 
@@ -229,6 +229,8 @@ Ens mostra els següents missatges que volen dir:
 
 Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nostre repositori. Però ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
 
+<hr>
+
 ## Crear i configurar l'usuari de **`github.com`**
 
 Abans de seguir cal crear usuari de [**`github.com`**](https://github.com/) i posteriorment configurar la nostra instal·lació de **`git`** al nostre ordinador.
@@ -310,15 +312,14 @@ Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que 
 
 [**Setting your <u>email address</u> for every repository on your computer**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
 
-
+<hr>
 
 ## Afegir fitxers, i comanda **```commit```**.
 
 Per començar crearem tres fitxers.
 
-1. **```index.html```**,
-1. **```main.js```** i
-1. **```styles.css```**.
+1. **```index.html```** i
+1. **```estils.css```**.
 
 1. **```index.html```**,
 
@@ -333,10 +334,12 @@ Copieu el següent codi:
   <head>
     <meta charset="utf-8">
     <title>Activitat primer repositori</title>
-  </head>
-  <body>
-  
-  </body>
+    <link rel="stylesheet" href="./estil.css">
+</head>
+<body>
+    <h1>Primera activitat</h1>
+    <p>Aquesta és la meva primera activitat amb <span>git</span></p>
+</body>
 </html>
 ```
 
@@ -400,11 +403,7 @@ Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el 
 
 Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectarà els canvis, ni controlarà els canvis que fem sobre aquest fitxer.
 
-
-
-## Afegir fitxers
-
-perquè **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
+Perquè **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
 
 I per així existeix la comanda **```git add <nomDelFitxer>```**.
 
@@ -480,28 +479,66 @@ create mode 100644 index.html
 > > <hr>
 > >
 > > ## Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
+> > ### [Establir el vostre nom d'usuari de Git per a cada repositori del vostre ordinador](/README.md#establir-el-vostre-nom-dusuari-de-git-per-a-cada-repositori-del-vostre-ordinador)
 > > 
-> > ## [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
-> >
-> > ## [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
+> > ### [Establir la vostra adreça de correu electrònic per a cada repositori del vostre ordinador](/README.md#establir-la-vostra-adreça-de-correu-electrònic-per-a-cada-repositori-del-vostre-ordinador)
 > > <hr>
 > </details>
 
+Ara afegirem dos fitxers més: **```estils.css```**.
 
-Ara afegirem dos fitxers més: **```main.js```** i **```styles.css```**
+Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i així us obrirà el **```Notepad```**.
 
-```sh
-~/pardo-primer-repositori $ touch main.js
-~/pardo-primer-repositori $ touch styles.css
-~/pardo-primer-repositori $ ls -l
--rw-rw-r-- 1 user user 130 Sep 24 13:00 index.html
--rw-rw-r-- 1 user user   0 Sep 24 13:00 main.js
--rw-rw-r-- 1 user user   0 Sep 24 13:00 styles.css
+Copieu el següent codi al fitxer **```estils.css```**
 
-~/pardo-primer-repositori $ 
+```css
+body {
+	font-family: sans-serif;
+	text-align: center;
+	padding: 3rem;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	transition: all 725ms ease-in-out;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bolder;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+	color: tomato;
+}
+
+button {
+	cursor: pointer;
+	appearance: none;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid navy;
+	background-color: dodgerblue;
+	color: white;
+}
+```
+
+
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> ~/pardo-primer-repositori $ touch estils.css
+> ~/pardo-primer-repositori $ ls -l
+> -rw-rw-r-- 1 user user 130 Sep 24 13:00 index.html
+> -rw-rw-r-- 1 user user   0 Sep 24 13:00 estils.css
+> 
+> ~/pardo-primer-repositori $ 
 ></pre>
 
-I de moment els deixem buits i anem a veure què ha passat al git.
+Anem a veure què ha passat al git.
 
 ```sh
 ~/pardo-primer-repositori $ git status
@@ -509,23 +546,10 @@ On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
            main.js
-           styles.css
+           estils.css
 
 nothing added to commit but untracked files present (use "git add" to track)
 
 ~/pardo-primer-repositori $
 ```
-
-
-
-[Signing up for a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-
-
-# Creació d'un repositori a la vostre compta a [github.com](https://github.com/)
-
-[Create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
-
-# Com convidar a un col·laborador a un repositori a la vostre compta a [github.com](https://github.com/)
-
-[Inviting collaborators to a personal repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
