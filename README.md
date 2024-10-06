@@ -316,6 +316,17 @@ Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el 
 
 Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectarà els canvis, ni controlarà els canvis que fem sobre aquest fitxer.
 
+## Configurar l'usuari de **`git`**
+
+Abans de seguir cal confirmar que tenim la nostra instal·lació de **`git`** al nostre ordinador ben configurat.
+
+## [**Setting your Git <u>username</u> for every repository on your computer**](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer)
+
+## [**Setting your <u>email address</u> for every repository on your computer**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
+
+
+# Creació d'un usuari a [github.com](https://github.com/)
+
 ## Afegir fitxers
 
 perquè **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
@@ -430,14 +441,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~/pardo-primer-repositori $
 ```
 
-Abans de seguir cal confirmar que tenim la nostra instal·lació de git al nostre ordinador ben configurat.
 
-
-## [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
-
-## [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
-
-# Creació d'un usuari a [github.com](https://github.com/)
 
 [Signing up for a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 
