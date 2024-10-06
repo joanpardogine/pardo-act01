@@ -227,6 +227,88 @@ Ens mostra els següents missatges que volen dir:
 
 Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nostre repositori. Però ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
 
+## Crear i configurar l'usuari de **`github.com`**
+
+Abans de seguir cal crear usuari de [**`github.com`**](https://github.com/) i posteriorment configurar la nostra instal·lació de **`git`** al nostre ordinador.
+
+### Creació d'un usuari a [github.com](https://github.com/)
+
+Per registrar un compte personal nou cal seguir els següents passos:
+
+**1.** Ves a https://github.com/
+
+**2.** Feu clic a <kbd>Sign up</kbd> (**Registrar-se**)
+
+**3.** Segueix les indicacions per crear el teu compte personal.
+
+Durant el registre, se us demanarà que verifiqueu la vostra adreça de correu electrònic. Sense una adreça de correu electrònic verificada, no podreu completar algunes tasques bàsiques de GitHub, com a crear un repositori.
+
+Si teniu problemes per comprovar la direcció de correu electrònic, hi ha alguns passos de solució de problemes que podeu seguir. Per obtenir més informació, a [**Verifying your email address.**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/verifying-your-email-address#troubleshooting-email-verification).
+
+[**Signing up for a new personal account**](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account)
+
+Un cop acabat el procès de registre del vostre usuari a [github.com](https://github.com/) cal que us recordeu del vostre nom d'usuari de [github.com](https://github.com/) i l'adreça de correu que heu vinculat al vostre usuari a [github.com](https://github.com/).
+
+### Establir el vostre nom d'usuari de Git per a cada repositori del vostre ordinador
+
+**1.** Obriu **`Git Bash`**.
+
+**2.** Configureu el vostre nom d'usuari de **`git`**:
+
+**Comanda**:
+
+```sh
+git config --global user.name "MonaLisa"
+```
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> git config --global user.name "MonaLisa"
+></pre>
+
+Confirmeu que heu definit correctament el nom d'usuari de Git:
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> $ git config --global user.name
+> MonaLisa
+></pre>
+
+[**Setting your Git <u>username</u> for every repository on your computer**](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer)
+
+### Establir la vostra adreça de correu electrònic per a cada repositori del vostre ordinador
+
+**1.** Obriu **`Git Bash`**.
+
+**2.** Configureu la vostra adreça de correu electrònic de **`git`**:
+
+Cal que utilitzeu l'adreça de correu electrònic que heu proporcionat a GitHub quan heu registrat el vostre nom d'usuari de Git.
+
+**Comanda**:
+
+```sh
+git config --global user.email "elteucorreu@exemple.cat"
+```
+
+Confirmeu que heu configurat correctament l'adreça de correu electrònic a Git:
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> $ git config --global user.email
+> elteucorreu@exemple.cat
+></pre>
+
+Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que els vostres compromisos s'atribueixin a vosaltres i apareguin al vostre gràfic de contribucions.
+
+[**Setting your <u>email address</u> for every repository on your computer**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
+
+
 
 # Afegir fitxers, i comanda **```commit```**.
 
@@ -316,16 +398,7 @@ Fixeu-vos que aquests fitxers sense traça, apareixen de color vermell, i en el 
 
 Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectarà els canvis, ni controlarà els canvis que fem sobre aquest fitxer.
 
-## Configurar l'usuari de **`git`**
 
-Abans de seguir cal confirmar que tenim la nostra instal·lació de **`git`** al nostre ordinador ben configurat.
-
-## [**Setting your Git <u>username</u> for every repository on your computer**](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer)
-
-## [**Setting your <u>email address</u> for every repository on your computer**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
-
-
-# Creació d'un usuari a [github.com](https://github.com/)
 
 ## Afegir fitxers
 
