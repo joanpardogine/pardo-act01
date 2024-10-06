@@ -1,4 +1,4 @@
-# ExplicaciÛ de git
+# Explicaci√≥ de git
 
 [Git Tutorial](https://www.w3schools.com/git/default.asp?remote=github)
 
@@ -6,7 +6,7 @@
 <details>
 <summary>Index</summary>
 
-1. [Instal∑lar **```git```** a **```Windows```**](./README.md#installar-git-a-windows-1)
+1. [Instal¬∑lar **```git```** a **```Windows```**](./README.md#installar-git-a-windows-1)
 
 1. [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori-1)
 
@@ -18,28 +18,28 @@
 
 1. [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
 
-1. [CreaciÛ d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
+1. [Creaci√≥ d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
 
-1. [CreaciÛ d'un repositori a la vostre compta a github.com](./README.md#creaciÛ-dun-repositori-a-la-vostre-compta-a-githubcom-1)
+1. [Creaci√≥ d'un repositori a la vostre compta a github.com](./README.md#creaci√≥-dun-repositori-a-la-vostre-compta-a-githubcom)
 
-1. [Com convidar a un col∑laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom-1)
+1. [Com convidar a un col¬∑laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom)
 
 1. [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
 </details>
 
-## Instal∑lar git a Windows
+## Instal¬∑lar git a Windows
 
 * Descarregar el programa ```git``` des de la web [Git-2.39.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.39.1.windows.1/Git-2.39.1-64-bit.exe)
 
-* P?gina web oficial de [GitHub](https://github.com)
+* P√†gina web oficial de [GitHub](https://github.com)
 
 **1.** Crear la carpeta contenidora del nostre projecte.
 
 
-Per tal de unificar la nostra explicaciÛ, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** Ès el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i ser? la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
-En el meu cas, la crear? dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
+Per tal de unificar la nostra explicaci√≥, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** √©s el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i ser√† la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
+En el meu cas, la crear√† dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
-Per fer-ho executarem les seg¸ents comandes.
+Per fer-ho executarem les seg√ºents comandes.
 ```sh
 ~$ mkdir <CognomAlumne>-primer-repositori
 ~$ cd <CognomAlumne>-primer-repositori
@@ -51,7 +51,7 @@ Per fer-ho executarem les seg¸ents comandes.
 
 Existeix una comanda que ens mostra en quin estat es troba el nostre repositori.
 
-Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrar? quin Ès l'estat del repositori.
+Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrar√† quin √©s l'estat del repositori.
 
 ```sh
 ~/<CognomAlumne>-primer-repositori $ git status
@@ -59,11 +59,11 @@ fatal: not a git repository (or any of the parent directories): .git
 ~/<CognomAlumne>-primer-repositori $
 ```
 
-Obtenim un error, que ens diu que no Ès un repositori. Aix? Ès normal, ja que per defecte, cap carpeta Ès un repositori.
+Obtenim un error, que ens diu que no √©s un repositori. aix√≠ √©s normal, ja que per defecte, cap carpeta √©s un repositori.
 
 # Inicialitzar un repositori
 
-Per fer que la nostra carpeta sigui un repositori, Ès a dir, per dir-li a **```git```** que volem que porti el control dels canvis al fitxers, cal que executem la comanda **```git init```**.
+Per fer que la nostra carpeta sigui un repositori, √©s a dir, per dir-li a **```git```** que volem que porti el control dels canvis al fitxers, cal que executem la comanda **```git init```**.
 
 **Comanda**:
 
@@ -79,10 +79,10 @@ Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/
 ~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/```**), Ès a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/<CognomAlumne>-primer-repositori/.git/``**).`
+Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/```**), √©s a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/<CognomAlumne>-primer-repositori/.git/``**).`
 
 > ## **NOTA IMPORTANT**
-> ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminar? tota la informaciÛ dels canvis que ha registrat fins al moment i crear?, com ja s'ha comentat, un **repositori buit**.
+> ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminar√† tota la informaci√≥ dels canvis que ha registrat fins al moment i crear√†, com ja s'ha comentat, un **repositori buit**.
 > <br>
 <br>
 
@@ -102,7 +102,7 @@ total 0
 ~/<CognomAlumne>-primer-repositori $
 ```
 
-Per? si executem la comanda perqu? mostri els fitxers ocults **```ls -la```** o **```dir /a```**, llavors sÌ que veiem que hi ha una carpeta nova anomenada **```.git```**, el que passa Ès que Ès oculta.
+Per√≤ si executem la comanda perqu√® mostri els fitxers ocults **```ls -la```** o **```dir /a```**, llavors s√≠ que veiem que hi ha una carpeta nova anomenada **```.git```**, el que passa √©s que √©s oculta.
 
 **Comanda**:
 
@@ -121,7 +121,7 @@ drwxrwxr-x 7 user user 4096 Sep 24 13:00 .git
 ~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Aquesta carpeta **```.git```** Ès la que contÈ tota la informaciÛ de **```git```** sobre el projecte. Cada vegada que es facin canvis, ja sigui afegint fitxers, modificant el contingut dels fitxers, creant o esborrant subcarpetes ,etc aquests canvis s'aniran guardant en aquesta carpeta. Per tant, **Ès important** que no l'esborreu, ni li feu res, ja que Ès **imprescindible** per poder interactuar amb **```git```**.
+Aquesta carpeta **```.git```** √©s la que cont√© tota la informaci√≥ de **```git```** sobre el projecte. Cada vegada que es facin canvis, ja sigui afegint fitxers, modificant el contingut dels fitxers, creant o esborrant subcarpetes ,etc aquests canvis s'aniran guardant en aquesta carpeta. Per tant, **√©s important** que no l'esborreu, ni li feu res, ja que √©s **imprescindible** per poder interactuar amb **```git```**.
 
 Si accedim a aquesta carpeta **```.git```** amb un **```cd .git```**, i llistem el contingut amb **```ls -l```** o amb **```dir```** podrem veure tot el contingut que necessita **```git```** per funcionar.
 
@@ -148,7 +148,7 @@ drwxrwxr-x 4 user user 4096 Sep 24 13:00 refs
 ~/<CognomAlumne>-primer-repositori/.git$ 
 ```
 
-Per?, si ara tornem enrere, amb **```cd ..```**, Ès a dir, a la carpeta **```<CognomAlmune>-primer-repositori```** i executem la comanda **```git -status```**, la resposta rebuda Ès una altra.
+Per√≤, si ara tornem enrere, amb **```cd ..```**, √©s a dir, a la carpeta **```<CognomAlmune>-primer-repositori```** i executem la comanda **```git -status```**, la resposta rebuda √©s una altra.
 
 **Comanda**:
 
@@ -170,18 +170,18 @@ nothing to commit (create/copy files and use "git add" to track)
 ~/<CognomAlumne>-primer-repositori $
 ```
 
-Ens mostra els seg¸ents missatges que volen dir:
+Ens mostra els seg√ºents missatges que volen dir:
 
 * **```On branch main```**, que ens trobem a la branca (**```branch```**) principal (**```main```**)
-* **```No commits yet```**, que encara no hi ha res per confirmar (**```commit```**) i per ˙ltim,
-* **```(create/copy files and use "git add" to track)```**, que si volem afegir fitxers perqu? comenci a gestionar la traÁabilitat d'aquests, cal que fem servir la comanda **```git add```** per afegir els fitxers a la llista dels fitxers que volem afegir al repositori.
+* **```No commits yet```**, que encara no hi ha res per confirmar (**```commit```**) i per √∫ltim,
+* **```(create/copy files and use "git add" to track)```**, que si volem afegir fitxers perqu√® comenci a gestionar la tra√ßabilitat d'aquests, cal que fem servir la comanda **```git add```** per afegir els fitxers a la llista dels fitxers que volem afegir al repositori.
 
-Per tant, fins ara no hem fet res mÈs que indicar quina Ès la carpeta del nostre repositori. Per? ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
+Per tant, fins ara no hem fet res m√©s que indicar quina √©s la carpeta del nostre repositori. Per√≤ ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
 
 
 # Afegir fitxers, i comanda **```commit```**.
 
-Per comenÁar crearem tres fitxers.
+Per comen√ßar crearem tres fitxers.
 
 1. **```index.html```**,
 1. **```main.js```** i
@@ -189,11 +189,11 @@ Per comenÁar crearem tres fitxers.
 
 1. **```index.html```**,
 
-El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)](https://codepen.io/joanpardo/pen/QWBzLwp)), i afegim el text b?sic per crear una senzilla p?gina web.
+El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)](https://codepen.io/joanpardo/pen/QWBzLwp)), i afegim el text b√†sic per crear una senzilla p√†gina web.
 
-Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i aix? us obrir? el **```Notepad```**.
+Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i aix√≠ us obrir√† el **```Notepad```**.
 
-Copieu el seg¸ent codi:
+Copieu el seg√ºent codi:
 
 ```html
 <html lang="ca">
@@ -213,7 +213,7 @@ I guardeu el fitxer a la vostra ruta:
 <CognomAlumne>-primer-repositori
 ```
 
-Un cop que hem creat, modificat i guardat aquest primer fitxer, anem a veure qu? Ès el que ens diu **```git```**.
+Un cop que hem creat, modificat i guardat aquest primer fitxer, anem a veure qu√® √©s el que ens diu **```git```**.
 
 **Comanda**:
 
@@ -237,36 +237,36 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Ara apareix una secciÛ **```Untracked files```**, Ès a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, Ès a dir que ***NO* tenen de traÁa**.
+Ara apareix una secci√≥ **```Untracked files```**, √â a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, √©s a dir que ***NO* tenen de tra√ßa**.
 
-…s a dir, que el fitxer **```index.html```**, no est? marcat per controlar els canvis que es facin sobre ell.
+√©s a dir, que el fitxer **```index.html```**, no est√† marcat per controlar els canvis que es facin sobre ell.
 
-A part, apareix la seg¸ent explicaciÛ:
+A part, apareix la seg√ºent explicaci√≥:
 ```sh
 use "git add ..." to include in what will be committed
 ```
 
-La comanda **```git add ...```** afegeix un fitxer al repositori local i el prepara per a la confirmaciÛ. Per eliminar o treure un fitxer, cal fer servir **```git reset HEAD <<nomFitxer>>```**.
+La comanda **```git add ...```** afegeix un fitxer al repositori local i el prepara per a la confirmaci√≥. Per eliminar o treure un fitxer, cal fer servir **```git reset HEAD <<nomFitxer>>```**.
 
-…s a dir, que cal fer servir "**```git add ...```**" per incloure els fitxers que volem que **```git```** comenci a controlar.
+√©s a dir, que cal fer servir "**```git add ...```**" per incloure els fitxers que volem que **```git```** comenci a controlar.
 
-I per ˙ltim ens indica:
+I per √∫ltim ens indica:
 
 ```sh
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Que tot i que hi ha **fitxers sense traÁa** (**```untracked files```**), no hi ha res afegit per **confirmar**, Ès a dir per incloure en el seg¸ent control. I ens indica que cal fer per afegir fitxers al control, "**```(use "git add" to track)```**, Ès a dir feu servir **```git add```** per afegir fitxers a traÁar.
+Que tot i que hi ha **fitxers sense tra√ßa** (**```untracked files```**), no hi ha res afegit per **confirmar**, √©s a dir per incloure en el seg√ºent control. I ens indica que cal fer per afegir fitxers al control, "**```(use "git add" to track)```**, √©s a dir feu servir **```git add```** per afegir fitxers a tra√ßar.
 
-Fixeu-vos que aquests fitxers sense traÁa, apareixen de color vermell, i en el nostre cas apareix el fitxer **```index.html```** que acabem d'afegir, per? com que no l'hem afegit al control de traÁa, **``git``** encara no el tÈ a la llista de fitxers a controlar.
+Fixeu-vos que aquests fitxers sense tra√ßa, apareixen de color vermell, i en el nostre cas apareix el fitxer **```index.html```** que acabem d'afegir, Per√≤ com que no l'hem afegit al control de tra√ßa, **``git``** encara no el t√© a la llista de fitxers a controlar.
 
-Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectar? els canvis, ni controlar? els canvis que fem sobre aquest fitxer.
+Ara mateix, per molt que nosaltres el modifiquem el fitxer **```index.html```**, **``git``** mai detectar√† els canvis, ni controlar√† els canvis que fem sobre aquest fitxer.
 
 ## Afegir fitxers
 
-Perqu? **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
+perqu√® **```git```** tingui present el fitxer **```index.html```**, cal afegir-lo.
 
-I per aix? existeix la comanda **```git add <nomDelFitxer>```**.
+I per aix√≠ existeix la comanda **```git add <nomDelFitxer>```**.
 
 **Comanda**:
 
@@ -280,7 +280,7 @@ git add index.html
 ~/<CognomAlumne>-primer-repositori $ git add index.html
 ```
 
-Un cop que hem afegit el fitxer **```index.html```**, anem a veure quin Ès l'estat del nostre repositori amb **```git status```**.
+Un cop que hem afegit el fitxer **```index.html```**, anem a veure quin √©s l'estat del nostre repositori amb **```git status```**.
 
 **Comanda**:
 
@@ -303,19 +303,19 @@ Changes to be committed:
 ~/<CognomAlumne>-primer-repositori $ 
 ```
 
-Un cop afegit el fitxer **```index.html```**, si tornem a executar la comanda **```git status```**, ara apareix un nou missatge **```Changes to be committed```** Ès a dir, canvis per ser controlats. I el fitxer **```index.html```** ja apareix com a fitxer nou i de color verd.
+Un cop afegit el fitxer **```index.html```**, si tornem a executar la comanda **```git status```**, ara apareix un nou missatge **```Changes to be committed```** √©s a dir, canvis per ser controlats. I el fitxer **```index.html```** ja apareix com a fitxer nou i de color verd.
 
-Ara Ès el moment de fer un **```commit```**. Un **```commit```** o **confirmaciÛ** Ès un **punt de control** en el nostre projecte. 
+Ara √©s el moment de fer un **```commit```**. Un **```commit```** o **confirmaci√≥** √©s un **punt de control** en el nostre projecte. 
 
 Acabarem tenint molts **```commit```**'s, cada vegada que fem alguna cosa important o prou rellevant. Com un petit **punt de control** al qual sempre podrem tornar
 
-Per tant, Ès **molt recomanable** realitzar aquests **```commit```**'s, per exemple cada vegada es crea un nou fitxer, o afegim una ˙nica funciÛ de **```javascript```** (per exemple), o hem modificat alguns estils, etc.
+Per tant, √©s **molt recomanable** realitzar aquests **```commit```**'s, per exemple cada vegada es crea un nou fitxer, o afegim una √∫nica funci√≥ de **```javascript```** (per exemple), o hem modificat alguns estils, etc.
 
-…s a dir, cal fer un **```commit```** cada vegada que es vulgui crear un **punt de control**, que volem recordar, o al que volem poder tornar mÈs endavant.
+√©s a dir, cal fer un **```commit```** cada vegada que es vulgui crear un **punt de control**, que volem recordar, o al que volem poder tornar m√©s endavant.
 
 
-Per fer-ho, cal fer servir, la comanda **```git commit```** amb el par?metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que Ès possible no afegir cap missatge, Ès molt recomanable, afegir-ne un que sigui ˙til i descriptiu sobre el que acabem de fer. Com per exemple, **```Creat el fitxer index.html```**.
-Aix? ens ser? molt ˙til per mÈs endavant, per quan veiem el log dels **```commit```**'s, puguem recon?ixer a cadascun d'ells i saber que Ès el que vam fer just en aquell moment.
+Per fer-ho, cal fer servir, la comanda **```git commit```** amb el par√†metre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que √©s possible no afegir cap missatge, √©s molt recomanable, afegir-ne un que sigui √∫til i descriptiu sobre el que acabem de fer. Com per exemple, **```Creat el fitxer index.html```**.
+aix√≠ ens ser√† molt √∫til per m√©s endavant, per quan veiem el log dels **```commit```**'s, puguem recon√®ixer a cadascun d'ells i saber que √©s el que vam fer just en aquell moment.
 
 ```sh
 ~/<CognomAlumne>-primer-repositori $ git commit -m "Creat el fitxer index.html"
@@ -333,7 +333,7 @@ create mode 100644 index.html
 
 > <hr>
 >
->  Si us apareix un error a l'hora de fer el **```commit```**, reviseu els seg¸ents punts:
+>  Si us apareix un error a l'hora de fer el **```commit```**, reviseu els seg√ºents punts:
 > 
 > [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
 >
@@ -343,7 +343,7 @@ create mode 100644 index.html
 
 <hr>
 
-Ara afegirem dos fitxers mÈs: **```main.js```** i **```styles.css```**
+Ara afegirem dos fitxers m√©s: **```main.js```** i **```styles.css```**
 
 ```sh
 ~/<CognomAlumne>-primer-repositori $ touch main.js
@@ -356,7 +356,7 @@ Ara afegirem dos fitxers mÈs: **```main.js```** i **```styles.css```**
 ~/<CognomAlumne>-primer-repositori $ 
 ```
 
-I de moment els deixem buits i anem a veure qu? ha passat al git.
+I de moment els deixem buits i anem a veure qu√® ha passat al git.
 
 ```sh
 ~/<CognomAlumne>-primer-repositori $ git status
@@ -371,23 +371,23 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~/<CognomAlumne>-primer-repositori $
 ```
 
-Abans de seguir cal confirmar que tenim la nostra instal∑laciÛ de git al nostre ordinador ben configurat.
+Abans de seguir cal confirmar que tenim la nostra instal¬∑laci√≥ de git al nostre ordinador ben configurat.
 
 
 ## [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
 
 ## [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 
-# CreaciÛ d'un usuari a [github.com](https://github.com/)
+# Creaci√≥ d'un usuari a [github.com](https://github.com/)
 
 [Signing up for a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 
 
-# CreaciÛ d'un repositori a la vostre compta a [github.com](https://github.com/)
+# Creaci√≥ d'un repositori a la vostre compta a [github.com](https://github.com/)
 
 [Create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
 
-# Com convidar a un col∑laborador a un repositori a la vostre compta a [github.com](https://github.com/)
+# Com convidar a un col¬∑laborador a un repositori a la vostre compta a [github.com](https://github.com/)
 
 [Inviting collaborators to a personal repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
