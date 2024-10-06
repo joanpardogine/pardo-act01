@@ -126,9 +126,11 @@ Ens mostra el missatge (**```Initialised empty Git repository in /d/pardo-primer
 
 > [!WARNING]  
 >
-> ## **NOTA IMPORTANT**
-> ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
-> <br>
+> > [!CAUTION]  
+> >
+> > ## **NOTA IMPORTANT**
+> > ### Tingueu present que si a un repositori que ja teniu creat, torneu a executar la comanda **```git init```**, eliminarà tota la informació dels canvis que ha registrat fins al moment i crearà, com ja s'ha comentat, un **repositori buit**.
+> > <br>
 <br>
 
 Tanmateix, si mirem el contingut de la carpeta **```<CognomAlumne>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
