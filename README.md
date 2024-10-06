@@ -58,7 +58,6 @@ pwd
 > ~/<CognomAlumne>-primer-repositori $ pwd
 > \d\<CognomAlumne>-primer-repositori
 ></pre>
-> <hr>
 
 # Comanda **```git status```** per veure l'estat del repositori
 
@@ -72,12 +71,14 @@ Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar 
 git status
 ```
 
-**Exemple**:
-<pre>
-~/<CognomAlumne>-primer-repositori $ git status
-fatal: not a git repository (or any of the parent directories): .git
-~/<CognomAlumne>-primer-repositori $
-</pre>
+> [!TIP]
+>
+> **Sortida**
+><pre>
+>~/<CognomAlumne>-primer-repositori $ git status
+>fatal: not a git repository (or any of the parent directories): .git
+>~/<CognomAlumne>-primer-repositori $
+></pre>
 
 Obtenim un error, que ens diu que no és un repositori. així és normal, ja que per defecte, cap carpeta és un repositori.
 
@@ -91,13 +92,14 @@ Per fer que la nostra carpeta sigui un repositori, és a dir, per dir-li a **```
 git status
 ```
 
-**Exemple**:
-
-```sh
-~/<CognomAlumne>-primer-repositori $ git init
-Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/
-~/<CognomAlumne>-primer-repositori $ 
-```
+> [!TIP]
+>
+> **Sortida**
+><pre>
+>~/<CognomAlumne>-primer-repositori $ git init
+>Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/
+>~/<CognomAlumne>-primer-repositori $ 
+>```
 
 Ens mostra el missatge (**```Initialised empty Git repository in /d/<CognomAlumne>-primer-repositori/.git/```**), és a dir, que s'ha inicialitzat com a **repositori buit** la ruta (**``/d/<CognomAlumne>-primer-repositori/.git/``**).`
 
