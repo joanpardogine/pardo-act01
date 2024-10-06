@@ -393,15 +393,14 @@ create mode 100644 index.html
 > 
 > > <hr>
 > >
-> >  Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
+> > ## Si us apareix un error a l'hora de fer el **```commit```**, reviseu els següents punts:
 > > 
-> > [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
+> > ## [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
 > >
-> > [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
+> > ## [Setting your username in Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 > > <hr>
 > </details>
 
-<hr>
 
 Ara afegirem dos fitxers més: **```main.js```** i **```styles.css```**
 
