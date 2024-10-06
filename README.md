@@ -37,15 +37,22 @@
 
 
 Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i serà la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
-En el meu cas, la crearà dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
+En el meu cas, la crearé dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
 Per fer-ho executarem les següents comandes.
 ```sh
+mkdir <CognomAlumne>-primer-repositori
+cd <CognomAlumne>-primer-repositori
+pwd
+```
+
+### Sortida
+<pre>
 ~$ mkdir <CognomAlumne>-primer-repositori
 ~$ cd <CognomAlumne>-primer-repositori
 ~/<CognomAlumne>-primer-repositori $ pwd
 \d\<CognomAlumne>-primer-repositori
-```
+</pre>
 
 # Comanda **```git status```** per veure l'estat del repositori
 
