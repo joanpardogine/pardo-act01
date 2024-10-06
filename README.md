@@ -6,13 +6,15 @@
 <details>
 <summary>Index</summary>
 
-1. [Instal·lar **```git```** a **```Windows```**](./README.md#installar-git-a-windows-1)
+1. [Instal·lar **```git```** a **```Windows```**](./README.md#installar-git-a-windows)
 
-1. [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori-1)
+1. [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori)
 
-1. [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori-1)
+1. [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori)
 
-1. [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit-1)
+1. [Crear i configurar l'usuari de **`github.com`**](./README.md#crear-i-configurar-lusuari-de-githubcom)
+
+1. [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit)
 
 1. [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
 
@@ -67,7 +69,7 @@ pwd
 > \d\<CognomAlumne>-primer-repositori
 ></pre>
 
-# Comanda **```git status```** per veure l'estat del repositori
+## Comanda **```git status```** per veure l'estat del repositori
 
 Existeix una comanda ([**`git status`**](https://git-scm.com/docs/git-status)) que ens mostra en quin **estat** es troba el nostre repositori.
 
@@ -103,7 +105,7 @@ L'**error** ens diu que **no és un repositori**. Això és totalment normal, ja
 
 
 
-# Inicialitzar un repositori
+## Inicialitzar un repositori
 
 Per fer que la nostra carpeta sigui un repositori, és a dir, per dir-li a **```git```** que volem que porti el control dels canvis al fitxers, cal que executem la comanda **```git init```**.
 
@@ -310,7 +312,7 @@ Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que 
 
 
 
-# Afegir fitxers, i comanda **```commit```**.
+## Afegir fitxers, i comanda **```commit```**.
 
 Per començar crearem tres fitxers.
 
