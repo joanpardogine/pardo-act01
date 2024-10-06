@@ -44,12 +44,12 @@
 **1.** Crear la carpeta contenidora del nostre projecte.
 
 
-Per tal de unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i serà la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
-En el meu cas, la crearé dins de la unitat **```D:```** del meu portatil. Com veieu des de la shell de linux per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
+Per tal d'unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i serà la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
+En el meu cas, la crearé dins de la unitat **```D:```** del meu equip. Com veieu des de la **`shell`** de **Linux** per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
-Per fer-ho executarem les següents comandes.
+Per crear l'esmentada carpeta, executarem les següents comandes:
 
-**Comanda**:
+**Comandes**:
 
 ```sh
 mkdir <CognomAlumne>-primer-repositori
@@ -69,7 +69,7 @@ pwd
 
 # Comanda **```git status```** per veure l'estat del repositori
 
-Existeix una comanda ([**`git status`**]()) que ens mostra en quin estat es troba el nostre repositori.
+Existeix una comanda ([**`git status`**](https://git-scm.com/docs/git-status)) que ens mostra en quin **estat** es troba el nostre repositori.
 
 Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar la comanda **``git status``** que ens mostrarà quin és l'estat del repositori.
 
@@ -88,7 +88,20 @@ git status
 >~/pardo-primer-repositori $
 ></pre>
 
-Obtenim un error, que ens diu que no és un repositori. així és normal, ja que per defecte, cap carpeta és un repositori.
+Obtenim un **error**, és normal!
+
+> [!ERROR]
+>
+> <pre>fatal: not a git repository (or any of the parent directories): .git
+> </pre>
+> <pre>
+> fatal: no és un repositori git (ni cap dels directoris pare): .git
+> </pre>
+> <hr>
+
+L'**error** ens diu que **no és un repositori**. Això és totalment normal, ja que per defecte, **cap carpeta és un repositori**.
+
+
 
 # Inicialitzar un repositori
 
