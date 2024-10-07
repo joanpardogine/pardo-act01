@@ -14,19 +14,11 @@
 
 1. [Crear i configurar l'usuari de **`github.com`**](./README.md#crear-i-configurar-lusuari-de-githubcom)
 
-1. [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-comanda-commit)
+1. [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-la-comanda-commit)
 
-1. [Setting your commit email address](./README.md#setting-your-commit-email-address-1)
 
-1. [Setting your username in Git](./README.md#setting-your-commit-email-address-1)
+1. [Convidar un col·laborador a un repositori personal](./README.md#convidar-un-collaborador-a-un-repositori-personal)
 
-1. [Creació d'un usuari a github.com](./README.md#creacic3b3-dun-usuari-a-githubcom-1)
-
-1. [Creació d'un repositori a la vostre compta a github.com](./README.md#creació-dun-repositori-a-la-vostre-compta-a-githubcom)
-
-1. [Com convidar a un col·laborador a un repositori a la vostre compta a github.com](./README.md#com-convidar-a-un-collaborador-a-un-repositori-a-la-vostre-compta-a-githubcom)
-
-1. [Inviting collaborators to a personal repository](./README.md#inviting-collaborators-to-a-personal-repository)
 </details>
 
 <hr>
@@ -225,9 +217,9 @@ Ens mostra els següents missatges que volen dir:
 
 * **```On branch main```**, que ens trobem a la **branca** (**```branch```**) **principal** (**```main```**)
 * **```No commits yet```**, que encara no hi ha res per confirmar (**```commit```**) i per últim,
-* **```(create/copy files and use "git add" to track)```**, que si volem afegir fitxers perquè comenci a gestionar la traçabilitat d'aquests, cal que fem servir la comanda **```git add```** per afegir els fitxers a la llista dels fitxers que volem afegir al repositori.
+* **```nothing to commit (create/copy files and use "git add" to track)```**, que en aquests moments no hi ha res per a fer el **`commit`**, i que si volem afegir fitxers perquè comenci a gestionar la traçabilitat d'aquests, cal que fem servir la comanda **```git add```** per afegir els fitxers a la llista dels fitxers que volem afegir a la traçabilitat del repositori.
 
-Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nostre repositori. Però ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
+Fins ara **NO** hem fet res més que indicar quina és la carpeta del nostre repositori. Però ja estem preparats per crear i/o modificar fitxers i dur el control dels canvis que fem sobre aquests.
 
 <hr>
 
@@ -235,11 +227,11 @@ Per tant, fins ara no hem fet res més que indicar quina és la carpeta del nost
 
 Abans de seguir cal crear usuari de [**`github.com`**](https://github.com/) i posteriorment configurar la nostra instal·lació de **`git`** al nostre ordinador.
 
-### Creació d'un usuari a [github.com](https://github.com/)
+### Creació d'un usuari a [**`github.com`**](https://github.com/)
 
 Per registrar un compte personal nou cal seguir els següents passos:
 
-**1.** Ves a https://github.com/
+**1.** Ves a [**`github.com`**](https://github.com/)
 
 **2.** Feu clic a <kbd>Sign up</kbd> (**Registrar-se**)
 
@@ -251,7 +243,7 @@ Si teniu problemes per comprovar la direcció de correu electrònic, hi ha algun
 
 [**Signing up for a new personal account**](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account)
 
-Un cop acabat el procès de registre del vostre usuari a [github.com](https://github.com/) cal que us recordeu del vostre nom d'usuari de [github.com](https://github.com/) i l'adreça de correu que heu vinculat al vostre usuari a [github.com](https://github.com/).
+> ### Un cop acabat el procès de registre del vostre usuari a **`github.com`** cal que us recordeu el vostre <u>nom d'usuari de **`github.com`**</u> i l'<u>adreça de correu</u> que heu vinculat al vostre usuari a [github.com](https://github.com/).
 
 ### Establir el vostre nom d'usuari de Git per a cada repositori del vostre ordinador
 
@@ -262,7 +254,7 @@ Un cop acabat el procès de registre del vostre usuari a [github.com](https://gi
 **Comanda**:
 
 ```sh
-git config --global user.name "MonaLisa"
+git config --global user.name "<nom_d_usuari_de_git>"
 ```
 
 > [!TIP]
@@ -326,7 +318,7 @@ Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que 
 
 <hr>
 
-## Afegir fitxers, i comanda **```commit```**.
+## Afegir fitxers, i la comanda **```commit```**.
 
 Per començar crearem dos fitxers.
 
@@ -577,3 +569,40 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~/pardo-primer-repositori $
 ```
 
+## Convidar un col·laborador a un repositori personal
+
+Podeu enviar una invitació per col·laborar al vostre repositori directament a algú a GitHub.
+
+**1.** Demana el nom d'usuari de la persona que estàs convidant com a col·laborador.
+
+**2.** A GitHub, navegueu a la pàgina principal del repositori.
+
+**3.** Sota el nom del repositori, feu clic a **`Settings`**.
+
+![alt text](./images/image.png)
+
+Si no podeu veure la pestanya **`Settings`**, seleccioneu el menú desplegable i feu clic a **`Settings`**.
+
+![alt text](./images/image-1.png)
+
+**4.** A la secció **`Access`** de la barra lateral, feu clic a **`Collaborators and teams`**.
+
+![alt text](./images/image-2.png)
+
+Feu clic a <kbd>Add people</kbd>.
+
+![alt text](./images/image-4.png)
+
+Al camp de cerca, comenceu a escriure el nom de la persona que voleu convidar i, a continuació, feu clic a un nom a la llista de coincidències.
+
+![alt text](./images/image-3.png)
+
+Selecciona un dels possibles **rols**
+
+![alt text](./images/image-5.png)
+
+I feu clic a <kbd>Afegeix NOM</kbd> al repositori.
+
+![alt text](./images/image-6.png)
+
+Podeu trobar més informació a [Inviting a collaborator to a personal repository](https://docs.github.com/en/enterprise-server@3.10/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository#inviting-a-collaborator-to-a-personal-repository)
