@@ -573,27 +573,32 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Podeu enviar una invitació per col·laborar al vostre repositori directament a algú a GitHub.
 
-**1.** Demana el nom d'usuari de la persona que estàs convidant com a col·laborador.
+**1.** Demana el **nom d'usuari** de la persona que estàs convidant com a col·laborador.
 
 **2.** A GitHub, navegueu a la pàgina principal del repositori.
 
 **3.** Sota el nom del repositori, feu clic a **`Settings`**.
 
-![alt text](./images/image.png)
+![alt text](image.png)
+
 
 Si no podeu veure la pestanya **`Settings`**, seleccioneu el menú desplegable i feu clic a **`Settings`**.
 
-![alt text](./images/image-1.png)
+![alt text](./images/image-7.png)
+
 
 **4.** A la secció **`Access`** de la barra lateral, feu clic a **`Collaborators and teams`**.
-
-![alt text](./images/image-2.png)
+![alt text](./images/image-1.png)
 
 Feu clic a <kbd>Add people</kbd>.
 
+![alt text](./images/image-2.png)
+
+Al camp de cerca, comenceu a escriure el nom de la persona que voleu convidar 
+
 ![alt text](./images/image-4.png)
 
-Al camp de cerca, comenceu a escriure el nom de la persona que voleu convidar i, a continuació, feu clic a un nom a la llista de coincidències.
+i, a continuació, feu clic a un nom a la llista de coincidències.
 
 ![alt text](./images/image-3.png)
 
