@@ -70,7 +70,7 @@ Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar 
 **Comanda**:
 
 ```sh
-git init
+git status
 ```
 
 > [!TIP]
@@ -104,7 +104,7 @@ Per fer que la nostra carpeta sigui un repositori, és a dir, per dir-li a **```
 **Comanda**:
 
 ```sh
-git status
+git init
 ```
 
 > [!TIP]
