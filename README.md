@@ -380,7 +380,7 @@ git status
 > 
 > nothing added to commit but untracked files present (use "git add" to track)
 > ~/pardo-primer-repositori $ 
-><pre>
+></pre>
 
 Ara apareix una secció **```Untracked files```**, É a dir, una apartat a on ens mostra aquells fitxers, que no estan **marcats** per controlar els seus els canvis, és a dir que ***NO* tenen de traça**.
 
@@ -540,19 +540,52 @@ button {
 }
 ```
 
+Perquè **```git```** tingui present el fitxer **```estils.css```**, cal afegir-lo.
 
+I per així existeix la comanda **```git add <nomDelFitxer>```**.
+
+**Comanda**:
+
+```sh
+git add estils.css
+```
 
 > [!TIP]
 >
 > **Sortida**
 ><pre>
-> ~/pardo-primer-repositori $ touch estils.css
-> ~/pardo-primer-repositori $ ls -l
-> -rw-rw-r-- 1 user user 130 Sep 24 13:00 index.html
-> -rw-rw-r-- 1 user user   0 Sep 24 13:00 estils.css
+> 
+> ~/pardo-primer-repositori $ git status
+> On branch main
+> 
+> No commits yet
+> 
+> Changes to be committed:
+>   (use "git rm --cached <file> ..." to unstage)
+>         new file:   estils.css
 > 
 > ~/pardo-primer-repositori $ 
 ></pre>
+
+*Comanda**:
+
+```sh
+git commit -m "Creat el fitxer estils.css"
+```
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> 
+> ~/pardo-primer-repositori $ git commit -m "Creat el fitxer estils.css"
+> [main (root-commit) 74859bc] Creat el fitxer estils.css
+> 1 file changed, 10 insertions(+)
+> create mode 100644 estils.css
+> 
+> ~/pardo-primer-repositori $ 
+></pre>
+
 
 Anem a veure què ha passat al git.
 
@@ -561,7 +594,6 @@ Anem a veure què ha passat al git.
 On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-           main.js
            estils.css
 
 nothing added to commit but untracked files present (use "git add" to track)
