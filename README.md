@@ -70,7 +70,7 @@ Un cop ja siguem dins de la carpeta que acabem de crear podem provar d'executar 
 **Comanda**:
 
 ```sh
-git status
+git init
 ```
 
 > [!TIP]
