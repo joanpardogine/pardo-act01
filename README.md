@@ -272,7 +272,13 @@ git config --global user.name "MonaLisa"
 > git config --global user.name "MonaLisa"
 ></pre>
 
-Confirmeu que heu definit correctament el nom d'usuari de Git:
+**3.** Confirmeu que heu definit correctament el nom d'usuari de Git:
+
+**Comanda**:
+
+```sh
+git config --global user.name
+```
 
 > [!TIP]
 >
@@ -298,7 +304,13 @@ Cal que utilitzeu l'adreça de correu electrònic que heu proporcionat a GitHub 
 git config --global user.email "elteucorreu@exemple.cat"
 ```
 
-Confirmeu que heu configurat correctament l'adreça de correu electrònic a Git:
+**3.** Confirmeu que heu configurat correctament l'adreça de correu electrònic a Git:
+
+**Comanda**:
+
+```sh
+git config --global user.email
+```
 
 > [!TIP]
 >
@@ -308,7 +320,7 @@ Confirmeu que heu configurat correctament l'adreça de correu electrònic a Git:
 > elteucorreu@exemple.cat
 ></pre>
 
-Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que els vostres compromisos s'atribueixin a vosaltres i apareguin al vostre gràfic de contribucions.
+Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que els vostres **`commits`** s'atribueixin a vosaltres i apareguin al vostre gràfic de contribucions.
 
 [**Setting your <u>email address</u> for every repository on your computer**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
 
@@ -316,14 +328,14 @@ Afegiu l'adreça de correu electrònic al vostre compte a GitHub, de manera que 
 
 ## Afegir fitxers, i comanda **```commit```**.
 
-Per començar crearem tres fitxers.
+Per començar crearem dos fitxers.
 
 1. **```index.html```** i
 1. **```estils.css```**.
 
-1. **```index.html```**,
+### **1.** Fitxer **```index.html```**,
 
-El primer l'anomenem **```index.html```** ([pardo-primer-repositori (codepen.io)](https://codepen.io/joanpardo/pen/QWBzLwp)), i afegim el text bàsic per crear una senzilla pàgina web.
+El primer dels fitxers l'anomenem **```index.html```**, i afegim el text bàsic per crear una senzilla pàgina web.
 
 Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i així us obrirà el **```Notepad```**.
 
@@ -459,14 +471,25 @@ Per tant, és **molt recomanable** realitzar aquests **```commit```**'s, per exe
 Per fer-ho, cal fer servir, la comanda **```git commit```** amb el paràmetre **```-m```**, per afegir-li un **missatge**, comentari o nom que l'identifiqui. I tot i que és possible no afegir cap missatge, és molt recomanable, afegir-ne un que sigui útil i descriptiu sobre el que acabem de fer. Com per exemple, **```Creat el fitxer index.html```**.
 així ens serà molt útil per més endavant, per quan veiem el log dels **```commit```**'s, puguem reconèixer a cadascun d'ells i saber que és el que vam fer just en aquell moment.
 
-```sh
-~/pardo-primer-repositori $ git commit -m "Creat el fitxer index.html"
-[main (root-commit) 74859bc] Creat el fitxer index.html
-1 file changed, 10 insertions(+)
-create mode 100644 index.html
+**Comanda**:
 
-~/pardo-primer-repositori $ 
+```sh
+git commit -m "Creat el fitxer index.html"
 ```
+
+> [!TIP]
+>
+> **Sortida**
+><pre>
+> 
+> ~/pardo-primer-repositori $ git commit -m "Creat el fitxer index.html"
+> [main (root-commit) 74859bc] Creat el fitxer index.html
+> 1 file changed, 10 insertions(+)
+> create mode 100644 index.html
+> 
+> ~/pardo-primer-repositori $ 
+></pre>
+
 
 <hr>
 
@@ -485,7 +508,8 @@ create mode 100644 index.html
 > > <hr>
 > </details>
 
-Ara afegirem dos fitxers més: **```estils.css```**.
+
+### **2.** Fitxer **```estils.css```**.
 
 Podeu fer servir el **```Notepad```** de **Windows**. Per fer-ho pressioneu la tecla de <kbd>Windows</kbd> + <kbd>R</kbd> i escriviu **```notepad.exe```**, i així us obrirà el **```Notepad```**.
 
