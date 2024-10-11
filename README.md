@@ -6,18 +6,16 @@
 <details>
 <summary>Index</summary>
 
-1. [Instal·lar **```git```** a **```Windows```**](./README.md#installar-git-a-windows)
+1. [Instal·lar **```git```** a **```Windows```**](#installar-git-a-windows)
 
-1. [Comanda **```git status```** per veure l'estat del repositori](./README.md#comanda-git-status-per-veure-lestat-del-repositori)
+1. [Comanda **```git status```** per veure l'estat del repositori](#comanda-git-status-per-veure-lestat-del-repositori)
 
-1. [Inicialitzar un repositori](./README.md#inicialitzar-un-repositori)
+1. [Inicialitzar un repositori](#inicialitzar-un-repositori)
 
-1. [Crear i configurar l'usuari de **`github.com`**](./README.md#crear-i-configurar-lusuari-de-githubcom)
+1. [Crear i configurar l'usuari de **`github.com`**](#crear-i-configurar-lusuari-de-githubcom)
 
-1. [Afegir fitxers, i comanda **```commit```**.](./README.md#afegir-fitxers-i-la-comanda-commit)
+1. [Afegir fitxers, i comanda **```commit```**.](#afegir-fitxers-i-la-comanda-commit)
 
-
-1. [Convidar un col·laborador a un repositori personal](./README.md#convidar-un-collaborador-a-un-repositori-personal)
 
 </details>
 
@@ -38,7 +36,10 @@
 **1.** Crear la carpeta contenidora del nostre projecte.
 
 
-Per tal d'unificar la nostra explicació, crearem una carpeta que anomenarem **```<CognomAlumne>-primer-repositori```**, (on **```<CognomAlumne>```** és el **cognom de l'alumne**, sense el **nom**, per exemple en el meu cas seria **```pardo-primer-repositori```**) i serà la que farem servir per guardar i centralitzar el projecte o repositori **```<CognomAlumne>-primer-repositori```**.
+Per tal d'unificar la nostra explicació, crearem una carpeta que anomenarem **```<PrimerCognom>-primer-repositori```**, (on **```<PrimerCognom>```** és el **cognom de l'alumne**, sense el **nom**. És important que no poseu ni el simbol **`<`**, ni el simbol **`>`**.
+
+El nom per exemple en el meu cas seria **```pardo-primer-repositori```** i serà la que farem servir per guardar i centralitzar el projecte o repositori **```<PrimerCognom>-primer-repositori```**.
+
 En el meu cas, la crearé dins de la unitat **```D:```** del meu equip. Com veieu des de la **`shell`** de **Linux** per accedir a la unitat **```D:```** cal accedir amb **```/d/```**.
 
 Per crear l'esmentada carpeta, executarem les següents comandes:
@@ -46,8 +47,8 @@ Per crear l'esmentada carpeta, executarem les següents comandes:
 **Comandes**:
 
 ```sh
-mkdir <CognomAlumne>-primer-repositori
-cd <CognomAlumne>-primer-repositori
+mkdir <PrimerCognom>-primer-repositori
+cd <PrimerCognom>-primer-repositori
 pwd
 ```
 
@@ -55,10 +56,10 @@ pwd
 >
 > **Sortida**
 ><pre>
-> ~$ mkdir <CognomAlumne>-primer-repositori
-> ~$ cd <CognomAlumne>-primer-repositori
+> ~$ mkdir <PrimerCognom>-primer-repositori
+> ~$ cd <PrimerCognom>-primer-repositori
 > ~/pardo-primer-repositori $ pwd
-> \d\<CognomAlumne>-primer-repositori
+> \d\<PrimerCognom>-primer-repositori
 ></pre>
 
 ## Comanda **```git status```** per veure l'estat del repositori
@@ -125,7 +126,7 @@ Ens mostra el missatge (**```Initialised empty Git repository in /d/pardo-primer
 > <br>
 <br>
 
-Tanmateix, si mirem el contingut de la carpeta **```<CognomAlumne>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
+Tanmateix, si mirem el contingut de la carpeta **```<PrimerCognom>-primer-repositori```** amb un **```ls -l```** o amb un **```dir```**, veiem que, aparentment no hi ha res creat.
 
 **Comanda**:
 
@@ -567,7 +568,7 @@ git add estils.css
 > ~/pardo-primer-repositori $ 
 ></pre>
 
-*Comanda**:
+**Comanda**:
 
 ```sh
 git commit -m "Creat el fitxer estils.css"
@@ -600,46 +601,3 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ~/pardo-primer-repositori $
 ```
-
-## Convidar un col·laborador a un repositori personal
-
-Podeu enviar una invitació per col·laborar al vostre repositori directament a algú a GitHub.
-
-**1.** Demana el **nom d'usuari** de la persona que estàs convidant com a col·laborador.
-
-**2.** A GitHub, navegueu a la pàgina principal del repositori.
-
-**3.** Sota el nom del repositori, feu clic a **`Settings`**.
-
-![alt text](image.png)
-
-
-Si no podeu veure la pestanya **`Settings`**, seleccioneu el menú desplegable i feu clic a **`Settings`**.
-
-![alt text](./images/image-7.png)
-
-
-**4.** A la secció **`Access`** de la barra lateral, feu clic a **`Collaborators and teams`**.
-![alt text](./images/image-1.png)
-
-Feu clic a <kbd>Add people</kbd>.
-
-![alt text](./images/image-2.png)
-
-Al camp de cerca, comenceu a escriure el nom de la persona que voleu convidar 
-
-![alt text](./images/image-4.png)
-
-i, a continuació, feu clic a un nom a la llista de coincidències.
-
-![alt text](./images/image-3.png)
-
-Selecciona un dels possibles **rols**
-
-![alt text](./images/image-5.png)
-
-I feu clic a <kbd>Afegeix NOM</kbd> al repositori.
-
-![alt text](./images/image-6.png)
-
-Podeu trobar més informació a [Inviting a collaborator to a personal repository](https://docs.github.com/en/enterprise-server@3.10/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository#inviting-a-collaborator-to-a-personal-repository)
