@@ -601,3 +601,5 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ~/pardo-primer-repositori $
 ```
+
+## [Segona part de activitat](segona-part.md)
